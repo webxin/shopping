@@ -1,0 +1,81 @@
+$base:20;
+$bordercolor:#f3f3f3; 
+html,body,section,div,ul,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+a,img,p,div,i{
+    color:#424242;
+    text-decoration: none;
+    border:0px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ul,li{
+    list-style:none;
+}
+input{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    text-shadow:none;
+    outline-style: none;
+}
+button{
+  border:none;
+}
+@mixin titlecolor {
+  color:#000;
+  font-size:18rem/$base;
+}
+@mixin sizecolor{
+    color:#797979;
+    font-size:12rem/$base;
+}
+@mixin padding {
+    padding:0 16rem/$base;
+}
+@mixin red{
+    color:#ff1c1c;
+}
+section{
+    font-size:14rem/$base;
+    color:#424242;
+}
+.vu_goback{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-size:18rem/$base;
+    line-height:40rem/$base;
+    text-align:center;
+    color:#000000;
+    background-color:#fff;
+    border-bottom:1px solid $bordercolor;
+}
+.vu_goback .el-icon-arrow-left{
+    position:absolute;
+    left:20rem/$base;
+    top:10rem/$base;
+    color:#606060;
+}
+@mixin vu_red_cilcle($right,$top){
+  position:absolute;
+  right:$right;
+  top:$top;
+  width:18rem/$base;
+  height:18rem/$base;
+  line-height:18rem/$base;
+  color:#fff;
+  font-size:12rem/$base;
+  background-color:#ff1c1c;
+  border-radius:9rem/$base;
+}
+@mixin vu_wh($width,$height){
+    width:$width;
+    height:$height;
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+  font-size:20rem/$base;
+}
